@@ -1,0 +1,126 @@
+kbd {
+    border: 1px solid #999;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0 0.6ex;
+    background: #eee;
+    box-shadow: inset -1px -1px 0 #999;
+    vertical-align: baseline;
+    color: #000;
+    height: 1.55em;
+    font-style: normal;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: revert;
+    line-height: revert;
+}
+kbd.optional {
+    border-style: dashed;
+    background: #fff;
+}
+var.optional {
+    border-style: dashed;
+}
+var {
+    border: 1px solid #9c9;
+    box-shadow: inset -1px -1px 0 #9c9;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: baseline;
+    border-radius: 7px;
+    padding: 0 4px;
+    background: #dfd;
+    margin: 2px;
+}
+var.type {
+    box-shadow: inset -1px -1px 0 #c99;
+    border-color: #c99;
+    background: #fdd;
+}
+span.repeat {
+    position: relative;
+    border: 1px dashed #393;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 6px;
+    margin-left: 0.5ex;
+    margin-top: 1em;
+    margin-bottom: 0.5ex;
+    min-width: 3.8em;
+    text-align: center;
+}
+span.repeat::before {
+    content: "zero or more";
+    white-space: nowrap;
+    display: block;
+    text-align: center;
+    font-size: 0.75em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1.4em;
+    color: #393;
+}
+var > span {
+    display: inline-block;
+    border-right: 1px dotted green;
+    padding-right: 0.5ex;
+    margin-right: 0.5ex;
+    font-style: italic;
+}
+span.version {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    background: #f7c0eb;
+    padding: 0.2ex 0.5ex;
+    border-radius: 5px;
+    display: block;
+    box-shadow: inset -1px -1px 0 #a06894;
+    font-size: 0.9em;
+}
+dfn {
+    font-style: italic;
+    text-decoration: underline;
+}
+.rule {
+    position: relative;
+    left: -4em;
+    color: #999;
+    font-size: 0.8em;
+}
+.rule ~ p {
+    margin-top: 0px;
+}
+blockquote {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #333;
+    background: #fff2d3;
+    padding: 1ex 1em;
+    margin: 1ex;
+    margin-left: 2em;
+    display: table;
+    margin-right: 8em;
+}
+blockquote > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.sidebar-visible .rule {
+    left: -1em;
+}
+.rule-link {
+    color: #999 !important;
+}
+
+.rule:target::before {
+    display: inline-block;
+    content: "»";
+    margin-inline-start: -20px;
+    width: 20px;
+}
+
+.history > blockquote {
+    background: #f7c0eb;
+}
